@@ -1,0 +1,10 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+repositories {
+	flatDir(dir: '../lib', name: 'JUnit Library')
+}
+
+dependencies {
+	testCompile 'junit:junit:4.12', ':hamcrest-core:1.3'
+}
